@@ -19,7 +19,6 @@ export default function useData() {
     formData.append("text", text);
     formData.append("fontName", fontName);
 
-    // Добавляем файлы
     if (files) {
       for (let i = 0; i < files.length; i++) {
         formData.append("videos", files[i]);
@@ -27,7 +26,7 @@ export default function useData() {
     }
 
     toast.promise(
-      api.post("/upload-video", formData, {
+      api.post("/api/upload-video", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
