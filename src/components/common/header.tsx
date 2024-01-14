@@ -1,5 +1,5 @@
-import ThemeToggle from "../ui/theme-toggle";
-import DetailsDrawer from "./details-drawer";
+import ThemeToggle from '../ui/theme-toggle';
+import DetailsDrawer from './details-drawer';
 
 export default function Header() {
   return (
