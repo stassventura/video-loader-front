@@ -44,6 +44,10 @@ const fonts = [
     title: 'Ubuntu',
     value: 'Ubuntu',
   },
+  {
+    title: 'PT Mono Bold',
+    value: 'PTMonoBold',
+  },
 ];
 
 export default function Form({ className, ...props }: CardProps) {
@@ -100,6 +104,7 @@ export default function Form({ className, ...props }: CardProps) {
             <Label htmlFor="text">Сообщение</Label>
             <Textarea
               id="text"
+              className="min-h-24"
               {...register('text', {
                 required: 'Это поле не может быть пустым.',
               })}
